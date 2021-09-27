@@ -39,6 +39,12 @@ class smartTerminal
 	}
 
 
+	/**
+	 * @return bool
+	 *
+	 * @throws \gcgov\payjunction\exceptions\connectException
+	 * @throws \gcgov\payjunction\exceptions\payjunctionException
+	 */
 	public function reset() : bool {
 		$guzzleResponse = $this->call( '/smartterminals/' . $this->config->getTerminalId() . '/main', 'POST' );
 
