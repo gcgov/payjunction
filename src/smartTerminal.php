@@ -15,6 +15,11 @@ class smartTerminal
 	extends
 	core\api {
 
+	/**
+	 * @param  \gcgov\payjunction\config  $config
+	 *
+	 * @throws \gcgov\payjunction\exceptions\configException
+	 */
 	public function __construct( \gcgov\payjunction\config $config ) {
 		parent::__construct( $config );
 
@@ -41,6 +46,13 @@ class smartTerminal
 	}
 
 
+	/**
+	 * @param  string  $terms
+	 *
+	 * @return \gcgov\payjunction\responses\smartTerminal\requestSignature
+	 * @throws \gcgov\payjunction\exceptions\connectException
+	 * @throws \gcgov\payjunction\exceptions\payjunctionException
+	 */
 	public function requestSignature( string $terms ) : requestSignature {
 		$options = [
 			'form_params' => [
@@ -60,6 +72,14 @@ class smartTerminal
 	}
 
 
+	/**
+	 * @param  float  $amountBase
+	 *
+	 * @return \gcgov\payjunction\responses\smartTerminal\requestPayment
+	 *
+	 * @throws \gcgov\payjunction\exceptions\connectException
+	 * @throws \gcgov\payjunction\exceptions\payjunctionException
+	 */
 	public function requestPayment( float $amountBase ) : requestPayment {
 		$options = [
 			'form_params' => [
@@ -79,6 +99,14 @@ class smartTerminal
 	}
 
 
+	/**
+	 * @param  string  $requestId
+	 *
+	 * @return \gcgov\payjunction\responses\smartTerminal\status
+	 *
+	 * @throws \gcgov\payjunction\exceptions\connectException
+	 * @throws \gcgov\payjunction\exceptions\payjunctionException
+	 */
 	public function status( string $requestId ) : status {
 		$guzzleResponse = $this->call( '/smartterminals/requests/' . $requestId );
 
@@ -95,6 +123,9 @@ class smartTerminal
 	 * @param  string  $signatureId
 	 *
 	 * @return string Base 64 encoded data URI of image
+	 *
+	 * @throws \gcgov\payjunction\exceptions\connectException
+	 * @throws \gcgov\payjunction\exceptions\payjunctionException
 	 */
 	public function signatureImage( string $signatureId ) : string {
 		$guzzleResponse = $this->call( '/smartterminals/signatures/' . $signatureId . '/image' );

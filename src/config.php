@@ -18,6 +18,15 @@ class config {
 	private string $apiKey      = '';
 
 
+	public function __construct( string $username='', string $password='', string $apiKey='', string $terminalId = '', string $merchantId = '' ) {
+		$this->setUsername( $username );
+		$this->setPassword( $password );
+		$this->setApiKey( $apiKey );
+		$this->setTerminalId( $terminalId );
+		$this->setMerchantId( $merchantId );
+	}
+
+
 	/**
 	 * @return string
 	 */

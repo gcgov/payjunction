@@ -10,15 +10,6 @@
   "require": {
 	"php": ">=8.0",
 	"guzzlehttp/guzzle": "^7.0",
-	"gcgov/json-deserialize": "dev-main"
-  },
-  "repositories": [
-	{
-	  "type": "path",
-	  "url": "C:/inetpub/www/packages/jsonDeserialize/",
-	  "options": {
-		"symlink": true
-	  }
-	}
-  ]
+	"gcgov/json-deserialize": "v1.0.0"
+  }
 }
