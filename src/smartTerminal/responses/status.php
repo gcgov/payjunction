@@ -1,6 +1,5 @@
 <?php
-namespace gcgov\payjunction\responses\smartTerminal;
-
+namespace gcgov\payjunction\smartTerminal\responses;
 
 /**
  * @method status static jsonDeserialize()

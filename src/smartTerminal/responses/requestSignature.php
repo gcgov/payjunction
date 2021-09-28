@@ -1,5 +1,5 @@
 <?php
-namespace gcgov\payjunction\responses\smartTerminal;
+namespace gcgov\payjunction\smartTerminal\responses;
 
 /**
  * @method requestSignature static jsonDeserialize()
