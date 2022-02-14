@@ -3,7 +3,7 @@
 namespace gcgov\payjunction;
 
 
-use gcgov\jsonDeserialize\exceptions\jsonDeserializeException;
+use andrewsauder\jsonDeserialize\exceptions\jsonDeserializeException;
 use gcgov\payjunction\exceptions\configException;
 use gcgov\payjunction\exceptions\payjunctionException;
 use gcgov\payjunction\smartTerminal\params;

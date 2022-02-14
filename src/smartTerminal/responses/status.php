@@ -4,7 +4,7 @@ namespace gcgov\payjunction\smartTerminal\responses;
 /**
  * @method status static jsonDeserialize()
  */
-class status extends \gcgov\jsonDeserialize\jsonDeserialize {
+class status extends \andrewsauder\jsonDeserialize\jsonDeserialize {
 
 	public string $status        = '';
 
