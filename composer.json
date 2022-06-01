@@ -10,6 +10,6 @@
   "require": {
 	"php": ">=8.0",
 	"guzzlehttp/guzzle": "^7.0",
-	"andrewsauder/json-deserialize": "^2.0"
+	"andrewsauder/json-deserialize": "^2.3.0"
   }
 }
