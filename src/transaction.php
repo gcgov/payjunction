@@ -29,6 +29,8 @@ class transaction
 	 * @param string|int $transactionId
 	 *
 	 * @return \gcgov\payjunction\transaction\responses\transaction
+	 * @throws \gcgov\payjunction\exceptions\connectException
+	 * @throws \gcgov\payjunction\exceptions\payjunctionException
 	 */
 	public function getTransaction( string|int $transactionId ): responses\transaction {
 
