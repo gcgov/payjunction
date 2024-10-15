@@ -1,5 +1,7 @@
 <?php
-namespace gcgov\payjunction\transaction\responses;
+namespace gcgov\payjunction\transaction\responses\transaction;
+
+use gcgov\payjunction\transaction\responses\transaction\response\processor;
 
 class response extends \andrewsauder\jsonDeserialize\jsonDeserialize {
 

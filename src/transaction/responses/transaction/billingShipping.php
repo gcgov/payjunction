@@ -1,7 +1,7 @@
 <?php
-namespace gcgov\payjunction\transaction\responses;
+namespace gcgov\payjunction\transaction\responses\transaction;
 
-use gcgov\payjunction\transaction\responses\transaction\response\billingShipping\address;
+use gcgov\payjunction\transaction\responses\transaction\billingShipping\address;
 
 class billingShipping extends \andrewsauder\jsonDeserialize\jsonDeserialize {
 

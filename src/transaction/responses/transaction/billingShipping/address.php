@@ -1,5 +1,5 @@
 <?php
-namespace gcgov\payjunction\transaction\responses\transaction\response\billingShipping;
+namespace gcgov\payjunction\transaction\responses\transaction\billingShipping;
 
 class address extends \andrewsauder\jsonDeserialize\jsonDeserialize {
 

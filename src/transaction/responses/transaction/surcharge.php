@@ -1,5 +1,5 @@
 <?php
-namespace gcgov\payjunction\transaction\responses;
+namespace gcgov\payjunction\transaction\responses\transaction;
 
 class surcharge extends \andrewsauder\jsonDeserialize\jsonDeserialize {
 

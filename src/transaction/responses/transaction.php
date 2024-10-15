@@ -1,6 +1,12 @@
 <?php
 namespace gcgov\payjunction\transaction\responses;
 
+use gcgov\payjunction\transaction\responses\transaction\billingShipping;
+use gcgov\payjunction\transaction\responses\transaction\response;
+use gcgov\payjunction\transaction\responses\transaction\settlement;
+use gcgov\payjunction\transaction\responses\transaction\surcharge;
+use gcgov\payjunction\transaction\responses\transaction\vault;
+
 class transaction extends \andrewsauder\jsonDeserialize\jsonDeserialize {
 
 	public string              $transactionId       = '';

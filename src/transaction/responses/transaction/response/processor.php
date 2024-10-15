@@ -1,8 +1,8 @@
 <?php
 namespace gcgov\payjunction\transaction\responses\transaction\response;
 
-use gcgov\payjunction\transaction\responses\response\transaction\response\processor\avs;
-use gcgov\payjunction\transaction\responses\response\transaction\response\processor\cvv;
+use gcgov\payjunction\transaction\responses\transaction\response\processor\avs;
+use gcgov\payjunction\transaction\responses\transaction\response\processor\cvv;
 
 class processor extends \andrewsauder\jsonDeserialize\jsonDeserialize {
 
