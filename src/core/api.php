@@ -6,7 +6,6 @@ use gcgov\payjunction\exceptions\connectException;
 use gcgov\payjunction\exceptions\payjunctionException;
 use JetBrains\PhpStorm\Pure;
 
-
 class api {
 
 	protected \gcgov\payjunction\config $config;
@@ -58,7 +57,7 @@ class api {
 				if( isset( $responseJson->errors ) && count( $responseJson->errors ) > 0 ) {
 					$exception = new payjunctionException( $responseJson->errors[ 0 ]->message, $e->getCode(), $e );
 					foreach( $responseJson->errors as $error ) {
-						$exception->addError( $error->message, $error->parameter, $error->type );
+						$exception->addError( $error->message ?? '', $error->parameter ?? '', $error->type ?? '' );
 					}
 					throw $exception;
 				}
